@@ -1,0 +1,272 @@
+{
+  "tool": {
+    "id": "escala-de-katz",
+    "title": "Índice de Katz (ABVD)",
+    "short": "Independência nas atividades básicas de vida diária",
+    "desc": "Índice de Katz: independência da pessoa idosa nas 6 atividades básicas de vida diária (banho, vestir, banheiro, transferência, continência, alimentação).",
+    "lead": "Avalia a independência funcional nas seis atividades básicas de vida diária, base da avaliação geriátrica ampla.",
+    "spec": [
+      "geriatria",
+      "medicina-fisica-e-reabilitacao",
+      "medicina-de-familia-e-comunidade",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "banho",
+        "Banho (independente: banha-se sozinho ou precisa de ajuda só para uma parte do corpo)",
+        "radio",
+        {
+          "opts": {
+            "0": "Dependente",
+            "1": "Independente"
+          }
+        }
+      ],
+      [
+        "vestir",
+        "Vestir-se (independente: pega as roupas e veste-se sem ajuda, exceto amarrar sapatos)",
+        "radio",
+        {
+          "opts": {
+            "0": "Dependente",
+            "1": "Independente"
+          }
+        }
+      ],
+      [
+        "higiene",
+        "Uso do banheiro (independente: vai ao banheiro, higieniza-se e arruma as roupas sem ajuda)",
+        "radio",
+        {
+          "opts": {
+            "0": "Dependente",
+            "1": "Independente"
+          }
+        }
+      ],
+      [
+        "transf",
+        "Transferência (independente: deita e levanta da cama e da cadeira sem ajuda)",
+        "radio",
+        {
+          "opts": {
+            "0": "Dependente",
+            "1": "Independente"
+          }
+        }
+      ],
+      [
+        "contin",
+        "Continência (independente: controle completo de urina e fezes)",
+        "radio",
+        {
+          "opts": {
+            "0": "Dependente",
+            "1": "Independente"
+          }
+        }
+      ],
+      [
+        "alim",
+        "Alimentação (independente: leva a comida do prato à boca sem ajuda)",
+        "radio",
+        {
+          "opts": {
+            "0": "Dependente",
+            "1": "Independente"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Índice de Katz",
+      "unit": "de 6",
+      "bands": [
+        [
+          0,
+          "high",
+          "Dependência importante (0 a 2 atividades independentes)"
+        ],
+        [
+          3,
+          "mid",
+          "Dependência parcial (3 a 5 atividades independentes)"
+        ],
+        [
+          6,
+          "low",
+          "Independente nas 6 atividades básicas"
+        ]
+      ]
+    },
+    "formula": "<p>1 ponto para cada atividade realizada de forma independente (sem supervisão, orientação ou ajuda de outra pessoa): banho, vestir-se, uso do banheiro, transferência, continência e alimentação. Total de 0 a 6.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Interpretação"
+      ],
+      [
+        "6",
+        "Independente"
+      ],
+      [
+        "3 a 5",
+        "Dependência parcial"
+      ],
+      [
+        "0 a 2",
+        "Dependência importante"
+      ]
+    ],
+    "table_note": "O índice original de Katz usa letras hierárquicas (A = independente em todas; G = dependente em todas). A soma de 0 a 6 é a forma simplificada mais usada, inclusive na adaptação brasileira.",
+    "tips": [
+      "Avalie o que a pessoa <strong>faz</strong>, não o que ela seria capaz de fazer: pergunte ao paciente e ao cuidador e, se possível, observe.",
+      "A perda funcional segue ordem inversa à do desenvolvimento infantil: banho e vestir costumam ser perdidos primeiro, alimentação por último.",
+      "Queda recente da pontuação é sinal de alerta para doença aguda, delirium ou piora de doença crônica.",
+      "O Katz tem efeito teto em idosos da comunidade: complemente com as atividades instrumentais (Lawton-Brody)."
+    ],
+    "sources": [
+      [
+        "Katz S et al. Studies of illness in the aged. The index of ADL: a standardized measure of biological and psychosocial function. JAMA, 1963.",
+        "https://doi.org/10.1001/jama.1963.03060120024016"
+      ],
+      [
+        "Lino VTS et al. Adaptação transcultural da Escala de Independência em Atividades da Vida Diária (Escala de Katz). Cad Saude Publica, 2008.",
+        "https://doi.org/10.1590/S0102-311X2008000100010"
+      ]
+    ],
+    "cases": [
+      [
+        "Independente em tudo: 6",
+        {
+          "banho": "1",
+          "vestir": "1",
+          "higiene": "1",
+          "transf": "1",
+          "contin": "1",
+          "alim": "1"
+        },
+        {
+          "score": 6,
+          "level": "low"
+        }
+      ],
+      [
+        "Dependente para banho e vestir: 4",
+        {
+          "banho": "0",
+          "vestir": "0",
+          "higiene": "1",
+          "transf": "1",
+          "contin": "1",
+          "alim": "1"
+        },
+        {
+          "score": 4,
+          "level": "mid"
+        }
+      ],
+      [
+        "Independente só na alimentação: 1",
+        {
+          "banho": "0",
+          "vestir": "0",
+          "higiene": "0",
+          "transf": "0",
+          "contin": "0",
+          "alim": "1"
+        },
+        {
+          "score": 1,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 6",
+      "label": "Índice de Katz",
+      "fields": [
+        [
+          "banho",
+          "radio",
+          0
+        ],
+        [
+          "vestir",
+          "radio",
+          0
+        ],
+        [
+          "higiene",
+          "radio",
+          0
+        ],
+        [
+          "transf",
+          "radio",
+          0
+        ],
+        [
+          "contin",
+          "radio",
+          0
+        ],
+        [
+          "alim",
+          "radio",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "high",
+          "Dependência importante (0 a 2 atividades independentes)"
+        ],
+        [
+          3,
+          "mid",
+          "Dependência parcial (3 a 5 atividades independentes)"
+        ],
+        [
+          6,
+          "low",
+          "Independente nas 6 atividades básicas"
+        ]
+      ]
+    },
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}

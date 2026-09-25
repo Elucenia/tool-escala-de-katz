@@ -1,0 +1,74 @@
+[
+  {
+    "label": "Independente em tudo: 6",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "score": 6,
+      "level": "low"
+    },
+    "originalInput": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Dependente para banho e vestir: 4",
+    "input": {
+      "banho": "0",
+      "vestir": "0",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "score": 4,
+      "level": "mid"
+    },
+    "originalInput": {
+      "banho": "0",
+      "vestir": "0",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Independente só na alimentação: 1",
+    "input": {
+      "banho": "0",
+      "vestir": "0",
+      "higiene": "0",
+      "transf": "0",
+      "contin": "0",
+      "alim": "1"
+    },
+    "expected": {
+      "score": 1,
+      "level": "high"
+    },
+    "originalInput": {
+      "banho": "0",
+      "vestir": "0",
+      "higiene": "0",
+      "transf": "0",
+      "contin": "0",
+      "alim": "1"
+    },
+    "expandedZeroOptions": []
+  }
+]

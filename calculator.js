@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escala-de-katz · Elucenia · https://github.com/Elucenia/tool-escala-de-katz
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escala-de-katz","title":"Índice de Katz (ABVD)","fields":[["banho","Banho (independente: banha-se sozinho ou precisa de ajuda só para uma parte do corpo)","radio",{"opts":{"0":"Dependente","1":"Independente"}}],["vestir","Vestir-se (independente: pega as roupas e veste-se sem ajuda, exceto amarrar sapatos)","radio",{"opts":{"0":"Dependente","1":"Independente"}}],["higiene","Uso do banheiro (independente: vai ao banheiro, higieniza-se e arruma as roupas sem ajuda)","radio",{"opts":{"0":"Dependente","1":"Independente"}}],["transf","Transferência (independente: deita e levanta da cama e da cadeira sem ajuda)","radio",{"opts":{"0":"Dependente","1":"Independente"}}],["contin","Continência (independente: controle completo de urina e fezes)","radio",{"opts":{"0":"Dependente","1":"Independente"}}],["alim","Alimentação (independente: leva a comida do prato à boca sem ajuda)","radio",{"opts":{"0":"Dependente","1":"Independente"}}]],"config":{"unit":"de 6","label":"Índice de Katz","fields":[["banho","radio",0],["vestir","radio",0],["higiene","radio",0],["transf","radio",0],["contin","radio",0],["alim","radio",0]],"bands":[[0,"high","Dependência importante (0 a 2 atividades independentes)"],[3,"mid","Dependência parcial (3 a 5 atividades independentes)"],[6,"low","Independente nas 6 atividades básicas"]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

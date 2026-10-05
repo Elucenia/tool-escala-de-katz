@@ -1,0 +1,647 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "escala-de-katz",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/escala-de-katz/calculator.js",
+    "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3",
+    "bytes": 5301
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "escala-de-katz",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Independente em tudo: 6",
+      "originalInput": {
+        "banho": "1",
+        "vestir": "1",
+        "higiene": "1",
+        "transf": "1",
+        "contin": "1",
+        "alim": "1"
+      },
+      "input": {
+        "banho": "1",
+        "vestir": "1",
+        "higiene": "1",
+        "transf": "1",
+        "contin": "1",
+        "alim": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 6,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "6",
+          "de 6"
+        ],
+        "label": "Índice de Katz",
+        "raw": {
+          "score": 6
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-katz/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "banho": "1",
+            "vestir": "1",
+            "higiene": "1",
+            "transf": "1",
+            "contin": "1",
+            "alim": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escala-de-katz/calculate",
+          "startedAt": "2026-10-05T17:38:49.202Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escala-de-katz",
+              "main": [
+                "6",
+                "de 6"
+              ],
+              "label": "Índice de Katz",
+              "raw": {
+                "score": 6
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "88dec8014953b6aa650d220e7aff80e9e20aca952fbfdf8790c4e05a8be89ab1",
+          "bytes": 135,
+          "elapsedMs": 3.135599999979604
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-katz/calculate",
+        "startedAt": "2026-10-05T17:38:49.202Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escala-de-katz",
+            "main": [
+              "6",
+              "de 6"
+            ],
+            "label": "Índice de Katz",
+            "raw": {
+              "score": 6
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "88dec8014953b6aa650d220e7aff80e9e20aca952fbfdf8790c4e05a8be89ab1",
+        "bytes": 135,
+        "elapsedMs": 3.135599999979604
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 6,
+            "obtained": 6,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 6,
+            "obtained": 6,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "6",
+            "obtained": "6",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 6",
+            "obtained": "de 6",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escala-de-katz",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Dependente para banho e vestir: 4",
+      "originalInput": {
+        "banho": "0",
+        "vestir": "0",
+        "higiene": "1",
+        "transf": "1",
+        "contin": "1",
+        "alim": "1"
+      },
+      "input": {
+        "banho": "0",
+        "vestir": "0",
+        "higiene": "1",
+        "transf": "1",
+        "contin": "1",
+        "alim": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 4,
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "4",
+          "de 6"
+        ],
+        "label": "Índice de Katz",
+        "raw": {
+          "score": 4
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-katz/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "banho": "0",
+            "vestir": "0",
+            "higiene": "1",
+            "transf": "1",
+            "contin": "1",
+            "alim": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escala-de-katz/calculate",
+          "startedAt": "2026-10-05T17:38:49.515Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escala-de-katz",
+              "main": [
+                "4",
+                "de 6"
+              ],
+              "label": "Índice de Katz",
+              "raw": {
+                "score": 4
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "50367f2c76b652a3777c63b1d3be0e12ca4b43de87e2cc82ab68eda51797a459",
+          "bytes": 135,
+          "elapsedMs": 2.5574999999953434
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-katz/calculate",
+        "startedAt": "2026-10-05T17:38:49.515Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escala-de-katz",
+            "main": [
+              "4",
+              "de 6"
+            ],
+            "label": "Índice de Katz",
+            "raw": {
+              "score": 4
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "50367f2c76b652a3777c63b1d3be0e12ca4b43de87e2cc82ab68eda51797a459",
+        "bytes": 135,
+        "elapsedMs": 2.5574999999953434
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "4",
+            "obtained": "4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 6",
+            "obtained": "de 6",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escala-de-katz",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Independente só na alimentação: 1",
+      "originalInput": {
+        "banho": "0",
+        "vestir": "0",
+        "higiene": "0",
+        "transf": "0",
+        "contin": "0",
+        "alim": "1"
+      },
+      "input": {
+        "banho": "0",
+        "vestir": "0",
+        "higiene": "0",
+        "transf": "0",
+        "contin": "0",
+        "alim": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 1,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "1",
+          "de 6"
+        ],
+        "label": "Índice de Katz",
+        "raw": {
+          "score": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-katz/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "banho": "0",
+            "vestir": "0",
+            "higiene": "0",
+            "transf": "0",
+            "contin": "0",
+            "alim": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escala-de-katz/calculate",
+          "startedAt": "2026-10-05T17:38:49.830Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escala-de-katz",
+              "main": [
+                "1",
+                "de 6"
+              ],
+              "label": "Índice de Katz",
+              "raw": {
+                "score": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2a7056fbfe53a6af0062136d90ff4c11d2533dc0028a85914a09d00045df869c",
+          "bytes": 135,
+          "elapsedMs": 4.240599999990081
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-katz/calculate",
+        "startedAt": "2026-10-05T17:38:49.830Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escala-de-katz",
+            "main": [
+              "1",
+              "de 6"
+            ],
+            "label": "Índice de Katz",
+            "raw": {
+              "score": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2a7056fbfe53a6af0062136d90ff4c11d2533dc0028a85914a09d00045df869c",
+        "bytes": 135,
+        "elapsedMs": 4.240599999990081
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1",
+            "obtained": "1",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 6",
+            "obtained": "de 6",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}

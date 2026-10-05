@@ -5,13 +5,13 @@
     "short": "Independência nas atividades básicas de vida diária",
     "desc": "Índice de Katz: independência da pessoa idosa nas 6 atividades básicas de vida diária (banho, vestir, banheiro, transferência, continência, alimentação).",
     "lead": "Avalia a independência funcional nas seis atividades básicas de vida diária, base da avaliação geriátrica ampla.",
+    "kind": "Escore",
     "spec": [
       "geriatria",
       "medicina-fisica-e-reabilitacao",
       "medicina-de-familia-e-comunidade",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "banho",
@@ -80,53 +80,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Índice de Katz",
-      "unit": "de 6",
-      "bands": [
-        [
-          0,
-          "high",
-          "Dependência importante (0 a 2 atividades independentes)"
-        ],
-        [
-          3,
-          "mid",
-          "Dependência parcial (3 a 5 atividades independentes)"
-        ],
-        [
-          6,
-          "low",
-          "Independente nas 6 atividades básicas"
-        ]
-      ]
-    },
     "formula": "<p>1 ponto para cada atividade realizada de forma independente (sem supervisão, orientação ou ajuda de outra pessoa): banho, vestir-se, uso do banheiro, transferência, continência e alimentação. Total de 0 a 6.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Interpretação"
-      ],
-      [
-        "6",
-        "Independente"
-      ],
-      [
-        "3 a 5",
-        "Dependência parcial"
-      ],
-      [
-        "0 a 2",
-        "Dependência importante"
-      ]
-    ],
-    "table_note": "O índice original de Katz usa letras hierárquicas (A = independente em todas; G = dependente em todas). A soma de 0 a 6 é a forma simplificada mais usada, inclusive na adaptação brasileira.",
-    "tips": [
-      "Avalie o que a pessoa <strong>faz</strong>, não o que ela seria capaz de fazer: pergunte ao paciente e ao cuidador e, se possível, observe.",
-      "A perda funcional segue ordem inversa à do desenvolvimento infantil: banho e vestir costumam ser perdidos primeiro, alimentação por último.",
-      "Queda recente da pontuação é sinal de alerta para doença aguda, delirium ou piora de doença crônica.",
-      "O Katz tem efeito teto em idosos da comunidade: complemente com as atividades instrumentais (Lawton-Brody)."
-    ],
     "sources": [
       [
         "Katz S et al. Studies of illness in the aged. The index of ADL: a standardized measure of biological and psychosocial function. JAMA, 1963.",
@@ -135,6 +89,10 @@
       [
         "Lino VTS et al. Adaptação transcultural da Escala de Independência em Atividades da Vida Diária (Escala de Katz). Cad Saude Publica, 2008.",
         "https://doi.org/10.1590/S0102-311X2008000100010"
+      ],
+      [
+        "McCabe D. Katz Index of Independence in Activities of Daily Living. HIGN/NYU, Issue 2, revised 2019; slightly adapted from Katz et al. 1970.",
+        "https://hign.org/sites/default/files/2020-06/Try_This_General_Assessment_2.pdf"
       ]
     ],
     "cases": [
@@ -184,61 +142,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 6",
-      "label": "Índice de Katz",
-      "fields": [
-        [
-          "banho",
-          "radio",
-          0
-        ],
-        [
-          "vestir",
-          "radio",
-          0
-        ],
-        [
-          "higiene",
-          "radio",
-          0
-        ],
-        [
-          "transf",
-          "radio",
-          0
-        ],
-        [
-          "contin",
-          "radio",
-          0
-        ],
-        [
-          "alim",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "high",
-          "Dependência importante (0 a 2 atividades independentes)"
-        ],
-        [
-          3,
-          "mid",
-          "Dependência parcial (3 a 5 atividades independentes)"
-        ],
-        [
-          6,
-          "low",
-          "Independente nas 6 atividades básicas"
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -247,17 +150,519 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T17:23:41.466Z",
+      "total": 64,
+      "passed": 64,
+      "sourceRowCount": 64,
+      "uniqueApiInputCount": 64,
+      "sourceContextCount": 64,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "329eac48cc6a31d2da86c1d4bc6626fde09aa87d4b654ccd0e1996dd51e6f66a",
+        "total": 64,
+        "bankRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+            "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+          },
+          {
+            "file": "reports/review-20261003/eight-organ-functional-independent-expectations-final26.json",
+            "sha256": "441cc3061db085da51adbe70aea27a87b1a0266488513a4942d3a9abd9f5a766"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+          "sha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80"
+        },
+        "packagingRequirement": "Compose reviewed source/label hashes plus metadata and freeze26 before package generation."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 64,
+        "uniqueApiInputs": 64,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+          "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+        }
+      },
+      "scope": "Exact integer weighted sum of 64 stored selected category/flag tuples for escala-de-katz. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+      "sources": [
+        {
+          "id": "escala-de-katz",
+          "declaredEdition": "1963 adapted six-item binary score, withLino2008",
+          "numericEvidenceEdition": "HIGN/NYUMcCabe official2019 Issue2, slight adaptation from Katzetal1970",
+          "url": "https://hign.org/sites/default/files/2020-06/Try_This_General_Assessment_2.pdf",
+          "access": "OfficialHIGN2019 two-page form downloaded; six-itemtable PDFp2 visually read and scope/permissions onp1 read. It attributes a slight adaptation from1970, not original1963A–G.",
+          "readScope": [
+            "Official2019 item table and source attribution, PDFp2",
+            "Population, interpretation limitations and permission notice, PDFp1"
+          ],
+          "notVerified": [
+            "Original1963/1970 fullpaper",
+            "Portuguesevalidatedversion, fullinstructions/clinicalclassifications and source-rights applicability"
+          ],
+          "sourceComponent": "Selected point total; SOFA additional six representative/unambiguous component outputs only",
+          "sourceFindings": [
+            {
+              "status": "edition-attribution-caution",
+              "detail": "Later official binary form supports current point arithmetic, but is not evidence that original1963A–G or PortugueseLino2008 complete instructions were reviewed."
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+      "evidenceSha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80",
+      "originalEvidence": {
+        "file": "reports/review-20261003/eight-organ-functional-independent-source-check-final26.json",
+        "sha256": "591c331b87a338053921efb483bd7e23b1741285439c4bbce0e3e6fd4918f751"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned.",
+        "recordedAt": "2026-10-04T18:58:11.346Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned."
+        },
+        "peer": {
+          "file": "reports/review-20261003/eight-organ-source-banks-root-peer-final26.json",
+          "sha256": "411b6e23e0dd3262149ce637566e50c3ba61f424bb997164c25c1862c3f603d0",
+          "summary": {
+            "checks": 55762,
+            "failed": 0,
+            "helperAssertions": 50346,
+            "sourceRows": 6947,
+            "uniqueInputObjects": 6947,
+            "freshNodeExecutions": 20841,
+            "methods": 137,
+            "allSourceRows": 60865,
+            "allUniqueInputs": 60792,
+            "allDuplicateRows": 73
+          },
+          "scope": "Root peer of46exact preimages,6947 independently frozen source input/expected objects and explicit seven-method additive crosscheck; SOFA six frozen source component scores and total only. Root replays fresh3public adapters. Excludes clinical rubrics, ambiguous table equalities, NIHSS UN, Barthel mobility/enema wording and patient risk/diagnosis. Exact helper reverse restores all27 prior scopes; realm normalization preserves exact ordered key identities."
+        },
+        "application": {
+          "file": "reports/review-20261003/eight-organ-source-evidence-application-final26.json",
+          "sha256": "4460d9fa07f83af63211052014fa73f12bfb1a3aed0e0bff076925f16b77682b"
+        },
+        "reviewedBankScope": "Exact integer weighted sum of 64 stored selected category/flag tuples for escala-de-katz. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+        "currentBinding": {
+          "source26BankSha256": "5eda7bfdb0f7f9a10dd210e293a50830d1b723a278090052c6404cb343df09ec",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/escala-de-katz/calculator.js",
+              "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/escala-de-katz/calculator.js",
+              "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/escala-de-katz/calculator.js",
+              "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 192,
+      "actualVmExecutions": 192,
+      "implementations": [
+        {
+          "app": "website",
+          "id": "escala-de-katz",
+          "file": "apps/website/private/tool-code/escala-de-katz/calculator.js",
+          "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+        },
+        {
+          "app": "dashboard",
+          "id": "escala-de-katz",
+          "file": "apps/dashboard/private/tool-code/escala-de-katz/calculator.js",
+          "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+        },
+        {
+          "app": "command-center",
+          "id": "escala-de-katz",
+          "file": "apps/command-center/private/tool-code/escala-de-katz/calculator.js",
+          "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+        }
+      ],
+      "qualifications": [
+        "Exact integer weighted sum of 64 stored selected category/flag tuples for escala-de-katz. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+        "NIHSS UN handling, GBS exact25 lab boundary, SOFA source boundaries/dose rubrics, Barthel yard/meter and enema rubrics, Katz original1963A–G and clinical grades/probabilities are not approved by score tests. Separately owned field/source-edition patches must be reviewed and composed.",
+        "All862 historical fixtures and their tolerances remain byte-identical. Four inline samples are only a subset of this complete hashed bank.",
+        "Synthetic selected-category combinations may not be clinically admissible patient assessments. No professional/clinical/rights/full-method approval inferred."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Katz ADL binário: 6 atividades, total 0–6; formulário HIGN 2019, ligeiramente adaptado de Katz et al. 1970; sem categorias A–G de 1963",
+    "implementationVersion": "escala-de-katz@native-2026-10-03+f261be3af60e",
+    "currentMethodSource": "https://hign.org/sites/default/files/2020-06/Try_This_General_Assessment_2.pdf",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "1 ponto para cada atividade realizada de forma independente (sem supervisão, orientação ou ajuda de outra pessoa): banho, vestir-se, uso do banheiro, transferência, continência e alimentação. Total de 0 a 6.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "banho",
+            "label": "Banho (independente: banha-se sozinho ou precisa de ajuda só para uma parte do corpo)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Dependente",
+              "1": "Independente"
+            }
+          },
+          {
+            "key": "vestir",
+            "label": "Vestir-se (independente: pega as roupas e veste-se sem ajuda, exceto amarrar sapatos)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Dependente",
+              "1": "Independente"
+            }
+          },
+          {
+            "key": "higiene",
+            "label": "Uso do banheiro (independente: vai ao banheiro, higieniza-se e arruma as roupas sem ajuda)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Dependente",
+              "1": "Independente"
+            }
+          },
+          {
+            "key": "transf",
+            "label": "Transferência (independente: deita e levanta da cama e da cadeira sem ajuda)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Dependente",
+              "1": "Independente"
+            }
+          },
+          {
+            "key": "contin",
+            "label": "Continência (independente: controle completo de urina e fezes)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Dependente",
+              "1": "Independente"
+            }
+          },
+          {
+            "key": "alim",
+            "label": "Alimentação (independente: leva a comida do prato à boca sem ajuda)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Dependente",
+              "1": "Independente"
+            }
+          }
+        ],
+        "hash": "4fa2a8efede4af36157c62b5ecc101eb601a68ef1452633ea39e6dd0318986f6"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Katz S et al. Studies of illness in the aged. The index of ADL: a standardized measure of biological and psychosocial function. JAMA, 1963.",
+          "url": "https://doi.org/10.1001/jama.1963.03060120024016",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "STUDIES OF ILLNESS IN THE AGED. THE INDEX OF ADL: A STANDARDIZED MEASURE OF BIOLOGICAL AND PSYCHOSOCIAL FUNCTION.",
+            "year": "1963",
+            "firstPublicationDate": "1963-09-01",
+            "doi": "10.1001/jama.1963.03060120024016",
+            "pmid": "14044222",
+            "journal": "JAMA",
+            "authors": "KATZ S, FORD AB, MOSKOWITZ RW, JACKSON BA, JAFFE MW."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/14044222/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Lino VTS et al. Adaptação transcultural da Escala de Independência em Atividades da Vida Diária (Escala de Katz). Cad Saude Publica, 2008.",
+          "url": "https://doi.org/10.1590/S0102-311X2008000100010",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "[Cross-cultural adaptation of the Independence in Activities of Daily Living Index (Katz Index)].",
+            "year": "2008",
+            "firstPublicationDate": "2008-01-01",
+            "doi": "10.1590/s0102-311x2008000100010",
+            "pmid": "18209838",
+            "journal": "Cadernos de saude publica",
+            "authors": "Lino VT, Pereira SR, Camacho LA, Ribeiro Filho ST, Buksman S."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/18209838/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "9d2ad3a1ee3e1d6f022ff4e1bebba84ad05185dc5136d70fcc0748c8765a9b8d",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T17:23:41.466Z",
+        "total": 64,
+        "passed": 64,
+        "sourceRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "329eac48cc6a31d2da86c1d4bc6626fde09aa87d4b654ccd0e1996dd51e6f66a",
+          "total": 64,
+          "bankRowCount": 64,
+          "uniqueApiInputCount": 64,
+          "sourceContextCount": 64,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+              "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+            },
+            {
+              "file": "reports/review-20261003/eight-organ-functional-independent-expectations-final26.json",
+              "sha256": "441cc3061db085da51adbe70aea27a87b1a0266488513a4942d3a9abd9f5a766"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+            "sha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80"
+          },
+          "packagingRequirement": "Compose reviewed source/label hashes plus metadata and freeze26 before package generation."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 64,
+          "uniqueApiInputs": 64,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+            "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+          }
+        },
+        "scope": "Exact integer weighted sum of 64 stored selected category/flag tuples for escala-de-katz. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+        "sources": [
+          {
+            "id": "escala-de-katz",
+            "declaredEdition": "1963 adapted six-item binary score, withLino2008",
+            "numericEvidenceEdition": "HIGN/NYUMcCabe official2019 Issue2, slight adaptation from Katzetal1970",
+            "url": "https://hign.org/sites/default/files/2020-06/Try_This_General_Assessment_2.pdf",
+            "access": "OfficialHIGN2019 two-page form downloaded; six-itemtable PDFp2 visually read and scope/permissions onp1 read. It attributes a slight adaptation from1970, not original1963A–G.",
+            "readScope": [
+              "Official2019 item table and source attribution, PDFp2",
+              "Population, interpretation limitations and permission notice, PDFp1"
+            ],
+            "notVerified": [
+              "Original1963/1970 fullpaper",
+              "Portuguesevalidatedversion, fullinstructions/clinicalclassifications and source-rights applicability"
+            ],
+            "sourceComponent": "Selected point total; SOFA additional six representative/unambiguous component outputs only",
+            "sourceFindings": [
+              {
+                "status": "edition-attribution-caution",
+                "detail": "Later official binary form supports current point arithmetic, but is not evidence that original1963A–G or PortugueseLino2008 complete instructions were reviewed."
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+        "evidenceSha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80",
+        "originalEvidence": {
+          "file": "reports/review-20261003/eight-organ-functional-independent-source-check-final26.json",
+          "sha256": "591c331b87a338053921efb483bd7e23b1741285439c4bbce0e3e6fd4918f751"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned.",
+          "recordedAt": "2026-10-04T18:58:11.346Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned."
+          },
+          "peer": {
+            "file": "reports/review-20261003/eight-organ-source-banks-root-peer-final26.json",
+            "sha256": "411b6e23e0dd3262149ce637566e50c3ba61f424bb997164c25c1862c3f603d0",
+            "summary": {
+              "checks": 55762,
+              "failed": 0,
+              "helperAssertions": 50346,
+              "sourceRows": 6947,
+              "uniqueInputObjects": 6947,
+              "freshNodeExecutions": 20841,
+              "methods": 137,
+              "allSourceRows": 60865,
+              "allUniqueInputs": 60792,
+              "allDuplicateRows": 73
+            },
+            "scope": "Root peer of46exact preimages,6947 independently frozen source input/expected objects and explicit seven-method additive crosscheck; SOFA six frozen source component scores and total only. Root replays fresh3public adapters. Excludes clinical rubrics, ambiguous table equalities, NIHSS UN, Barthel mobility/enema wording and patient risk/diagnosis. Exact helper reverse restores all27 prior scopes; realm normalization preserves exact ordered key identities."
+          },
+          "application": {
+            "file": "reports/review-20261003/eight-organ-source-evidence-application-final26.json",
+            "sha256": "4460d9fa07f83af63211052014fa73f12bfb1a3aed0e0bff076925f16b77682b"
+          },
+          "reviewedBankScope": "Exact integer weighted sum of 64 stored selected category/flag tuples for escala-de-katz. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+          "currentBinding": {
+            "source26BankSha256": "5eda7bfdb0f7f9a10dd210e293a50830d1b723a278090052c6404cb343df09ec",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/escala-de-katz/calculator.js",
+                "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/escala-de-katz/calculator.js",
+                "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/escala-de-katz/calculator.js",
+                "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 192,
+        "actualVmExecutions": 192,
+        "implementations": [
+          {
+            "app": "website",
+            "id": "escala-de-katz",
+            "file": "apps/website/private/tool-code/escala-de-katz/calculator.js",
+            "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+          },
+          {
+            "app": "dashboard",
+            "id": "escala-de-katz",
+            "file": "apps/dashboard/private/tool-code/escala-de-katz/calculator.js",
+            "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+          },
+          {
+            "app": "command-center",
+            "id": "escala-de-katz",
+            "file": "apps/command-center/private/tool-code/escala-de-katz/calculator.js",
+            "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+          }
+        ],
+        "qualifications": [
+          "Exact integer weighted sum of 64 stored selected category/flag tuples for escala-de-katz. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+          "NIHSS UN handling, GBS exact25 lab boundary, SOFA source boundaries/dose rubrics, Barthel yard/meter and enema rubrics, Katz original1963A–G and clinical grades/probabilities are not approved by score tests. Separately owned field/source-edition patches must be reviewed and composed.",
+          "All862 historical fixtures and their tolerances remain byte-identical. Four inline samples are only a subset of this complete hashed bank.",
+          "Synthetic selected-category combinations may not be clinically admissible patient assessments. No professional/clinical/rights/full-method approval inferred."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3",
+      "sourceAnnotationAmendment": {
+        "receipt": "reports/review-20261003/eight-organ-functional-source-corrections-candidate-final26-r4-r2.json",
+        "sourceReviewSha256": "e1a3a85edb2d38e880b320918a3738586221e4c5e7041bc83b51ec7b584385cc",
+        "previousMethodVersion": "Katz ADL 1963:adaptação binária 6 atividades, total 0–6; PTLino 2008; semcategorias A–Goriginais",
+        "scope": "Source-edition and displayed-rubric limitations only; no clinical/instrument-language/rights approval and no arithmetic changes."
+      }
+    },
+    "limits": "Registre a versão do índice e as definições de independência em cada atividade. A adaptação brasileira de 2008 foi estudada quanto à equivalência cultural e confiabilidade; isso não certifica esta implementação binária nem suas novas traduções. O total local 0–6 não é a classificação histórica A–G. A soma binária de 6 atividades foi conferida contra o formulário HIGN de 2019, que se declara ligeiramente adaptado de Katz et al. 1970. Essa fonte não é a classificação A–G de 1963 nem certifica a adaptação brasileira de 2008 ou as traduções autorais atuais. As exceções de independência e a finalidade de avaliação de atividades básicas em pessoas idosas devem seguir o formulário correspondente.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.043Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Fonte de 1963 sem resumo; tabela e faixa etária exata do estudo de 2008 não lidas em artigo integral."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceAnnotationAmendment": {
+        "receipt": "reports/review-20261003/eight-organ-functional-source-corrections-candidate-final26-r4-r2.json",
+        "sourceReview": {
+          "file": "reports/review-20261003/eight-organ-functional-primary-source-review-final26.json",
+          "sha256": "e1a3a85edb2d38e880b320918a3738586221e4c5e7041bc83b51ec7b584385cc"
+        },
+        "declaredEditionBefore": "Katz ADL 1963:adaptação binária 6 atividades, total 0–6; PTLino 2008; semcategorias A–Goriginais",
+        "numericEvidenceEdition": "HIGN/NYUMcCabe official2019 Issue2, slight adaptation from Katzetal1970",
+        "access": "OfficialHIGN2019 two-page form downloaded; six-itemtable PDFp2 visually read and scope/permissions onp1 read. It attributes a slight adaptation from1970, not original1963A–G.",
+        "findings": [
+          {
+            "status": "edition-attribution-caution",
+            "detail": "Later official binary form supports current point arithmetic, but is not evidence that original1963A–G or PortugueseLino2008 complete instructions were reviewed."
+          }
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "rightsApproval": "not-performed"
+      }
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escala-de-katz/calculator.js",
+    "bytes": 5301,
+    "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "f3c67b38711d0744728081a27404f28a598c5a69db6877510ae6e37e34b6c99c",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "d7ce11ec6f47a17973f7ac7922fc3932c821f584145c9020f19ce8e664c7d280",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "d7ce11ec6f47a17973f7ac7922fc3932c821f584145c9020f19ce8e664c7d280",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,0 +1,320 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field banho",
+    "input": {
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "banho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field banho",
+    "input": {
+      "banho": "",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "banho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option banho",
+    "input": {
+      "banho": "__ELUCENIA_INVALID_OPTION__",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "banho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field vestir",
+    "input": {
+      "banho": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vestir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field vestir",
+    "input": {
+      "banho": "1",
+      "vestir": "",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vestir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option vestir",
+    "input": {
+      "banho": "1",
+      "vestir": "__ELUCENIA_INVALID_OPTION__",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "vestir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field higiene",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "higiene"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field higiene",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "higiene"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option higiene",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "__ELUCENIA_INVALID_OPTION__",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "higiene"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field transf",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "transf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field transf",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "transf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option transf",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "__ELUCENIA_INVALID_OPTION__",
+      "contin": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "transf"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field contin",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "contin"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field contin",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "contin"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option contin",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "__ELUCENIA_INVALID_OPTION__",
+      "alim": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "contin"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field alim",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "alim"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field alim",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "alim"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option alim",
+    "input": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "alim"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

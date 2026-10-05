@@ -1,6 +1,17 @@
 [
   {
-    "label": "Independente em tudo: 6",
+    "id": "escala-de-katz",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Independente em tudo: 6",
+    "originalInput": {
+      "banho": "1",
+      "vestir": "1",
+      "higiene": "1",
+      "transf": "1",
+      "contin": "1",
+      "alim": "1"
+    },
     "input": {
       "banho": "1",
       "vestir": "1",
@@ -13,18 +24,38 @@
       "score": 6,
       "level": "low"
     },
+    "recordedResult": {
+      "main": [
+        "6",
+        "de 6"
+      ],
+      "label": "Índice de Katz",
+      "raw": {
+        "score": 6
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "escala-de-katz",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Dependente para banho e vestir: 4",
     "originalInput": {
-      "banho": "1",
-      "vestir": "1",
+      "banho": "0",
+      "vestir": "0",
       "higiene": "1",
       "transf": "1",
       "contin": "1",
       "alim": "1"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Dependente para banho e vestir: 4",
     "input": {
       "banho": "0",
       "vestir": "0",
@@ -37,18 +68,38 @@
       "score": 4,
       "level": "mid"
     },
+    "recordedResult": {
+      "main": [
+        "4",
+        "de 6"
+      ],
+      "label": "Índice de Katz",
+      "raw": {
+        "score": 4
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "escala-de-katz",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Independente só na alimentação: 1",
     "originalInput": {
       "banho": "0",
       "vestir": "0",
-      "higiene": "1",
-      "transf": "1",
-      "contin": "1",
+      "higiene": "0",
+      "transf": "0",
+      "contin": "0",
       "alim": "1"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Independente só na alimentação: 1",
     "input": {
       "banho": "0",
       "vestir": "0",
@@ -61,14 +112,23 @@
       "score": 1,
       "level": "high"
     },
-    "originalInput": {
-      "banho": "0",
-      "vestir": "0",
-      "higiene": "0",
-      "transf": "0",
-      "contin": "0",
-      "alim": "1"
+    "recordedResult": {
+      "main": [
+        "1",
+        "de 6"
+      ],
+      "label": "Índice de Katz",
+      "raw": {
+        "score": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

@@ -314,7 +314,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Katz ADL binário: 6 atividades, total 0–6; formulário HIGN 2019, ligeiramente adaptado de Katz et al. 1970; sem categorias A–G de 1963",
-    "implementationVersion": "escala-de-katz@native-2026-10-03+f261be3af60e",
+    "implementationVersion": "escala-de-katz@native-2026-10-05+00f949107d28",
     "currentMethodSource": "https://hign.org/sites/default/files/2020-06/Try_This_General_Assessment_2.pdf",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -601,13 +601,41 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3",
+      "implementationHash": "00f949107d28d247f0c09757d6150e558073641a32dc78eb183103ec0a85d36c",
       "sourceAnnotationAmendment": {
         "receipt": "reports/review-20261003/eight-organ-functional-source-corrections-candidate-final26-r4-r2.json",
         "sourceReviewSha256": "e1a3a85edb2d38e880b320918a3738586221e4c5e7041bc83b51ec7b584385cc",
         "previousMethodVersion": "Katz ADL 1963:adaptação binária 6 atividades, total 0–6; PTLino 2008; semcategorias A–Goriginais",
         "scope": "Source-edition and displayed-rubric limitations only; no clinical/instrument-language/rights approval and no arithmetic changes."
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escala-de-katz@native-2026-10-03+f261be3af60e",
+          "previousImplementationHash": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3",
+          "implementationHash": "00f949107d28d247f0c09757d6150e558073641a32dc78eb183103ec0a85d36c",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "4fa2a8efede4af36157c62b5ecc101eb601a68ef1452633ea39e6dd0318986f6",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Registre a versão do índice e as definições de independência em cada atividade. A adaptação brasileira de 2008 foi estudada quanto à equivalência cultural e confiabilidade; isso não certifica esta implementação binária nem suas novas traduções. O total local 0–6 não é a classificação histórica A–G. A soma binária de 6 atividades foi conferida contra o formulário HIGN de 2019, que se declara ligeiramente adaptado de Katz et al. 1970. Essa fonte não é a classificação A–G de 1963 nem certifica a adaptação brasileira de 2008 ou as traduções autorais atuais. As exceções de independência e a finalidade de avaliação de atividades básicas em pessoas idosas devem seguir o formulário correspondente.",
     "sourceLimitEvidence": {
@@ -646,20 +674,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escala-de-katz/calculator.js",
-    "bytes": 5301,
-    "sha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3"
+    "bytes": 5506,
+    "sha256": "00f949107d28d247f0c09757d6150e558073641a32dc78eb183103ec0a85d36c"
   },
-  "sourceToolSha256": "f3c67b38711d0744728081a27404f28a598c5a69db6877510ae6e37e34b6c99c",
+  "sourceToolSha256": "ba2205a25ef428cd8aa8e6d8f57709a108061da0e445940bc66ff9cfe1a2c791",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "d7ce11ec6f47a17973f7ac7922fc3932c821f584145c9020f19ce8e664c7d280",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "d7ce11ec6f47a17973f7ac7922fc3932c821f584145c9020f19ce8e664c7d280",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

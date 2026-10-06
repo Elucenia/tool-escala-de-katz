@@ -97,3 +97,22 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Indipendente nelle 6 attività di base
+
+
+### 2
+
+Dipendenza parziale (3 a 5 attività indipendenti)
+
+
+### 3
+
+Dipendenza importante (0 a 2 attività indipendenti)
+

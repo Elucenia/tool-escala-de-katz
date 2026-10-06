@@ -1,0 +1,387 @@
+{
+  "id": "escala-de-katz",
+  "implementationVersion": "escala-de-katz@native-2026-10-05+00f949107d28",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Independente nas 6 atividades básicas",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependência parcial (3 a 5 atividades independentes)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependência importante (0 a 2 atividades independentes)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Independent in the 6 basic activities",
+            "locale": "en",
+            "template": "documented-authored-e06a2d1851dadac21b47"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Partial dependence (3 to 5 independent activities)",
+            "locale": "en",
+            "template": "documented-authored-8187b7a04fe59d107958"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Important dependence (0 to 2 independent activities)",
+            "locale": "en",
+            "template": "documented-authored-e5f89afd528b3193eeb9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Independiente en las 6 actividades básicas",
+            "locale": "es",
+            "template": "documented-authored-e06a2d1851dadac21b47"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependencia parcial (3 a 5 actividades independientes)",
+            "locale": "es",
+            "template": "documented-authored-8187b7a04fe59d107958"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dependencia importante (0 a 2 actividades independientes)",
+            "locale": "es",
+            "template": "documented-authored-e5f89afd528b3193eeb9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indépendant dans les 6 activités de base",
+            "locale": "fr",
+            "template": "documented-authored-e06a2d1851dadac21b47"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dépendance partielle (3 à 5 activités indépendantes)",
+            "locale": "fr",
+            "template": "documented-authored-8187b7a04fe59d107958"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dépendance importante (0 à 2 activités indépendantes)",
+            "locale": "fr",
+            "template": "documented-authored-e5f89afd528b3193eeb9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Unabhängig bei den 6 grundlegenden Aktivitäten",
+            "locale": "de",
+            "template": "documented-authored-e06a2d1851dadac21b47"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Teilweise Abhängigkeit (3 bis 5 unabhängige Aktivitäten)",
+            "locale": "de",
+            "template": "documented-authored-8187b7a04fe59d107958"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ausgeprägte Abhängigkeit (0 bis 2 unabhängige Aktivitäten)",
+            "locale": "de",
+            "template": "documented-authored-e5f89afd528b3193eeb9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indipendente nelle 6 attività di base",
+            "locale": "it",
+            "template": "documented-authored-e06a2d1851dadac21b47"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dipendenza parziale (3 a 5 attività indipendenti)",
+            "locale": "it",
+            "template": "documented-authored-8187b7a04fe59d107958"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Dipendenza importante (0 a 2 attività indipendenti)",
+            "locale": "it",
+            "template": "documented-authored-e5f89afd528b3193eeb9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "مستقل في الأنشطة الأساسية 6",
+            "locale": "ar",
+            "template": "documented-authored-e06a2d1851dadac21b47"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "اعتماد جزئي (3 إلى 5 أنشطة مستقلة)",
+            "locale": "ar",
+            "template": "documented-authored-8187b7a04fe59d107958"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "اعتماد شديد (0 إلى 2 من الأنشطة المستقلة)",
+            "locale": "ar",
+            "template": "documented-authored-e5f89afd528b3193eeb9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "在 6 项基本活动中独立",
+            "locale": "zh",
+            "template": "documented-authored-e06a2d1851dadac21b47"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "部分依赖（3至5项独立活动）",
+            "locale": "zh",
+            "template": "documented-authored-8187b7a04fe59d107958"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度依赖（0至2项独立活动）",
+            "locale": "zh",
+            "template": "documented-authored-e5f89afd528b3193eeb9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "6つの基本的日常生活動作で自立",
+            "locale": "ja",
+            "template": "documented-authored-e06a2d1851dadac21b47"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "部分的依存（3～5項目の自立した活動）",
+            "locale": "ja",
+            "template": "documented-authored-8187b7a04fe59d107958"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高度の依存（0～2項目の自立した活動）",
+            "locale": "ja",
+            "template": "documented-authored-e5f89afd528b3193eeb9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Independente em tudo: 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "6 बुनियादी गतिविधियों में स्वतंत्र",
+            "locale": "hi",
+            "template": "documented-authored-e06a2d1851dadac21b47"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dependente para banho e vestir: 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "आंशिक निर्भरता (3 से 5 स्वतंत्र गतिविधियाँ)",
+            "locale": "hi",
+            "template": "documented-authored-8187b7a04fe59d107958"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Independente só na alimentação: 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "महत्वपूर्ण निर्भरता (0 से 2 स्वतंत्र गतिविधियाँ)",
+            "locale": "hi",
+            "template": "documented-authored-e5f89afd528b3193eeb9"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

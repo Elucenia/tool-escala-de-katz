@@ -1,0 +1,172 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escala-de-katz",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "7587a83b0550513bbd1794e7176d096e799cfbab",
+    "oldEngineSha256": "f261be3af60e8e220094b594664be5bb3acc5a45568ef590fe524e17693244e3",
+    "currentEngineSha256": "00f949107d28d247f0c09757d6150e558073641a32dc78eb183103ec0a85d36c"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Independente em tudo: 6",
+      "input": {
+        "banho": "1",
+        "vestir": "1",
+        "higiene": "1",
+        "transf": "1",
+        "contin": "1",
+        "alim": "1"
+      },
+      "publicOutput": {
+        "id": "escala-de-katz",
+        "main": [
+          "6",
+          "de 6"
+        ],
+        "label": "Índice de Katz",
+        "raw": {
+          "score": 6
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 6,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "6",
+          "de 6"
+        ],
+        "label": "Índice de Katz",
+        "level": "low",
+        "verdict": "Independente nas 6 atividades básicas",
+        "note": "",
+        "raw": {
+          "score": 6
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Dependente para banho e vestir: 4",
+      "input": {
+        "banho": "0",
+        "vestir": "0",
+        "higiene": "1",
+        "transf": "1",
+        "contin": "1",
+        "alim": "1"
+      },
+      "publicOutput": {
+        "id": "escala-de-katz",
+        "main": [
+          "4",
+          "de 6"
+        ],
+        "label": "Índice de Katz",
+        "raw": {
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "de 6"
+        ],
+        "label": "Índice de Katz",
+        "level": "mid",
+        "verdict": "Dependência parcial (3 a 5 atividades independentes)",
+        "note": "",
+        "raw": {
+          "score": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Independente só na alimentação: 1",
+      "input": {
+        "banho": "0",
+        "vestir": "0",
+        "higiene": "0",
+        "transf": "0",
+        "contin": "0",
+        "alim": "1"
+      },
+      "publicOutput": {
+        "id": "escala-de-katz",
+        "main": [
+          "1",
+          "de 6"
+        ],
+        "label": "Índice de Katz",
+        "raw": {
+          "score": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 1,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "de 6"
+        ],
+        "label": "Índice de Katz",
+        "level": "high",
+        "verdict": "Dependência importante (0 a 2 atividades independentes)",
+        "note": "",
+        "raw": {
+          "score": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    }
+  ]
+}
